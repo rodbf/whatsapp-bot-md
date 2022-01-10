@@ -1,0 +1,15 @@
+{
+    "filesys":{
+        "db": "./db",
+        "media": "./media"
+    },
+    "commands": "./commands",
+    "table": {
+        "role": "/role.json",
+        "summoners": "/summoners.json",
+        "enderecos": "/enderecos.json"
+    },
+    "media": {
+        "flavio": "/flavio.png"
+    }
+}
