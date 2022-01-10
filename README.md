@@ -8,6 +8,6 @@
 8. ???
 9. profit
 
-./commands/\_example.js - exemplo de arquivo de comando
-./commands.js - arquivo de declaração de comandos
-./settings.json - configurações, ex: bancos de dados
+./commands/\_example.js - exemplo de arquivo de comando  
+./commands.js - arquivo de declaração de comandos  
+./settings.json - configurações, ex: bancos de dados  
