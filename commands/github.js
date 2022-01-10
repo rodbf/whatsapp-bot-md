@@ -1,5 +1,5 @@
 module.change_code = 1;
-const url = "https://github.com/rodbf/whatsapp-bot";
+const url = "https://github.com/rodbf/whatsapp-bot-md";
 
 module.exports = {
 	description: "retorna o github do projeto",

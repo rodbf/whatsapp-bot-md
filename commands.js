@@ -9,6 +9,7 @@ let commands = {
     "!summon":      require(settings.commands+"/summon.js"),
     "!role":        require(settings.commands+"/role.js"),
     "!endereco":    require(settings.commands+"/endereco.js"),
+    "!vacina":      require(settings.commands+"/vacina.js"),
     "!sticker":     require(settings.commands+"/sticker.js"),
     "!flavio":      require(settings.commands+"/flavio.js"),
     "!help":        require(settings.commands+"/help.js"),
@@ -19,7 +20,7 @@ let commands = {
             debuggingNextMessage = true;
         }
     },
-    "!commands": {
+    "!comandos": {
         description: "lista comandos",
         options: [
             ["desc"]

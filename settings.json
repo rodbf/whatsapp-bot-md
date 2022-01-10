@@ -7,7 +7,8 @@
     "table": {
         "role": "/role.json",
         "summoners": "/summoners.json",
-        "enderecos": "/enderecos.json"
+        "enderecos": "/enderecos.json",
+        "vacinas": "/vacinas.json"
     },
     "media": {
         "flavio": "/flavio.png"

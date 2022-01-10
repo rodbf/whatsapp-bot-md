@@ -22,6 +22,7 @@ module.exports = {
 		else if(options[0] == "remover"){
 			if(book.addresses[options[1]]){
 				delete book.addresses[options[1]];
+				writeAddressBook(msg, book);
 				msg.reply("Removido.");
 				return;
 			}
@@ -41,7 +42,6 @@ module.exports = {
 		else{
 			if(Object.keys(book.addresses).length > 0){
 				let output = "*Endereços*\n";
-				console.log(Object.keys(book.addresses));
 				for(let key in book.addresses){
 					output += "\n" + key + ": " + book.addresses[key];
 				}

@@ -11,7 +11,7 @@ let sessionData;
 if(fs.existsSync(SESSION_FILE_PATH)){
     sessionData = require(SESSION_FILE_PATH);
 }
-const client = new Client({puppeteer: {executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe'}, clientId: 'rblivin-whatsbot'});
+const client = new Client({puppeteer: {executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true}, clientId: 'rblivin-whatsbot'});
 
 client.on('qr', (qr) => {
     renderQR(qr);
