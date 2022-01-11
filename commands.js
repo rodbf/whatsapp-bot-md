@@ -12,7 +12,7 @@ let commands = {
     "!vacina":      require(settings.commands+"/vacina.js"),
     "!sticker":     require(settings.commands+"/sticker.js"),
     "!flavio":      require(settings.commands+"/flavio.js"),
-    "!help":        require(settings.commands+"/help.js"),
+    "!ajuda":        require(settings.commands+"/help.js"),
     "!github":      require(settings.commands+"/github.js"),
     "!debug": {
         description: "registra a proxima mensagem",
@@ -35,7 +35,7 @@ let commands = {
 function getCommandDescriptors(msg){
     let options = getOptions(msg);
     let keys = Object.keys(commands);
-    let output = "List of commands:\n";
+    let output = "Lista de comandos:\n";
     for(var i = 0; i < keys.length; i++){
         output = output + "\n" + keys[i];
         if("options" in commands[keys[i]]){
