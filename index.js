@@ -38,6 +38,13 @@ function renderQR(qr){
     })
 };
 
+client.on('message_create', async msg => {
+    if(fs.existsSync("./self.json") && (getSender(msg) == require("./self.json").number)){
+        msg.author = require("./self.json").id;
+        commands(msg);
+    }
+});
+
 client.on('message', async msg => {
     commands(msg);
 });
